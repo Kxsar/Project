@@ -1,0 +1,26 @@
+                        FilmCatalog                                    catalog: list[Film]                                          
+- next_id: int                                                        
+ + __init__()                                                            
+ + add_film(film: Film)                                        
+ + display_catalog()                                              
++ remove_film(title: str)                                  
++ search_by_title(title: str) ->    Film          
+ + filter_by_genre(genre: str) -> list          
+ + sort_by_duration()                                            
+ + search_by_director(director: str) -> list|
+ + save_to_file(filename: str)                          
+ + load_from_file(filename: str)                      
+                                      Film                                        
+ - title: str                                                          
+ - release_date: str                                                
+ - director: str                                                        
+- genre: str                                                              
+ - duration_min: int                                                
+ - id: int                                                                  
+ + __init__(title: str, release_date: str,    
+      director: str, genre: str, duration_min: 
+      int)                                                                        
+ + set_id(film_id: int)                                      
+ + __str__() -> str                                                  
+ + get_details() -> str                                        
+ + additional_details() -> str                      
